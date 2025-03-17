@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "INF2475"
+version = "0.1.0"
+description = "A data science class repository"
+authors = ["Caio Siqueira <csiqueira@puc-rio.br>"]
+packages = [
+    { include = "INF2475", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.0"

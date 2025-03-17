@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Debug Tests (pytest)",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "pytest",
+        "args": [
+          "--maxfail=1",
+          "--disable-warnings",
+          "-v"
+        ],
+        "justMyCode": true,
+        "console": "integratedTerminal"
+      }
+    ]
+}
