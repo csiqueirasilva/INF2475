@@ -25,16 +25,3 @@ class Perceptron:
                 self.weights[1:] += self.lr * error * xi
                 self.weights[0] += self.lr * error
             print(f"Epoch {epoch+1}/{self.epochs} - Weights: {self.weights}")
-
-def run_perceptron_example():
-    print("Running Perceptron Example (AND Function)")
-    # AND function dataset
-    X = np.array([[0, 0],
-                  [0, 1],
-                  [1, 0],
-                  [1, 1]])
-    y = np.array([0, 0, 0, 1])
-    perceptron = Perceptron(input_size=2, lr=0.1, epochs=10)
-    perceptron.train(X, y)
-    for xi in X:
-        print(f"Input: {xi} -> Prediction: {perceptron.predict(xi)}")

@@ -1,6 +1,4 @@
 import sys
-from INF2475.perceptron import run_perceptron_example
-from INF2475.nn import run_nn_example
 
 def main():
     if len(sys.argv) < 2:
@@ -9,9 +7,9 @@ def main():
 
     option = sys.argv[1].lower()
     if option == "perceptron":
-        run_perceptron_example()
+        pass # do something!
     elif option == "nn":
-        run_nn_example()
+        pass # do something!
     else:
         print("Unknown option. Please choose 'perceptron' or 'nn'.")
         sys.exit(1)
